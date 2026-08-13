@@ -1,121 +1,286 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="mk">
 	<head>
-		<title>WalletLess</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/tabIcon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>WalletLess — Сите ваши картички за лојалност на едно место</title>
+		<meta name="description" content="WalletLess е виртуелен паричник за вашите картички за лојалност. Достапни офлајн, подредени според вашата локација. Бесплатно за iPhone." />
+		<meta name="theme-color" content="#08080B" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="WalletLess — Сите ваши картички. Во еден паричник." />
+		<meta property="og:description" content="Виртуелен паричник за картички за лојалност. Офлајн, подредени според локација, на три јазици." />
+		<meta property="og:image" content="images/logo.png" />
+		<meta property="og:url" content="https://walletlessapp.com/" />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<link rel="alternate" hreflang="mk" href="https://walletlessapp.com/?lang=mk" />
+		<link rel="alternate" hreflang="en" href="https://walletlessapp.com/?lang=en" />
+		<link rel="alternate" hreflang="sq" href="https://walletlessapp.com/?lang=sq" />
+		<link rel="alternate" hreflang="x-default" href="https://walletlessapp.com/" />
+
+		<link rel="icon" href="images/tabIcon.png" />
+		<link rel="apple-touch-icon" href="images/logo-256.png" />
+		<link rel="stylesheet" href="assets/css/site.css" />
 	</head>
-	<body class="is-preload">
+	<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<a class="skip-link" href="#intro" data-i18n="skip">Прескокни до содржината</a>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.png" alt="" /></span>
-						<h1>WalletLess</h1>
-						<p>Чувајте ги вашите картички за лојалност на едно место!<br /></p>
-					</header>
+		<!-- Grain / progress -->
+		<div class="grain" aria-hidden="true"></div>
+		<div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">WalletLess</a></li>
-							<li><a href="#second">Зошто WalletLess?</a></li>
-							<li><a href="#third">Како се започна?</a></li>
-							<li><a href="#contact">Контакт</a></li>
-						</ul>
-					</nav>
+		<!-- Nav -->
+		<header class="nav" id="nav">
+			<div class="nav__inner">
+				<a class="nav__brand" href="#top" aria-label="WalletLess">
+					<img src="images/logo-256.png" alt="" width="28" height="28" />
+					<span>WalletLess</span>
+				</a>
 
-				<!-- Main -->
-					<div id="main">
+				<nav class="nav__links" aria-label="WalletLess">
+					<a href="#intro" data-nav data-i18n="nav.overview">Преглед</a>
+					<a href="#second" data-nav data-i18n="nav.why">Зошто</a>
+					<a href="#third" data-nav data-i18n="nav.story">Приказна</a>
+					<a href="#contact" data-nav data-i18n="nav.contact">Контакт</a>
+				</nav>
 
-						<section id="intro" class="main special">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>WalletLess App</h2>
-										</header>
-										<p>Апликацијата WalletLess е совршено место за складирање на сите ваши картички за лојалност на едно место! Лесна за употреба и удобна апликација која ви овозможува да ги додадете сите ваши картички за лојалност во овој виртуелен паричник. Сите картички се достапни дури и ако сте офлајн. Картичките се подредени според локацијата на корисникот за уште поедноставна за користење!</p>
-									</div>
-								</div>
-							</section>
+				<div class="langsw" id="langsw" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Јазик">
+					<span class="langsw__thumb" aria-hidden="true"></span>
+					<button type="button" data-lang="mk" lang="mk">MK</button>
+					<button type="button" data-lang="en" lang="en">EN</button>
+					<button type="button" data-lang="sq" lang="sq">SQ</button>
+				</div>
 
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Зошто WalletLess?</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-wallet"></span>
-										<h3>Помалку за носење</h3>
-										<p>Ќе ви ги олесни џебовите! Додајте ги вашите картички за лојалност на едно место и носете ги во телефонот.</p>
-									</li>
-									<li>
-										<span class="icon solid major style3 fa-arrow-up"></span>
-										<h3>Картичката што ви треба секогаш на врвот!</h3>
-										<p>Сортирање на картичките според локацијата на вашиот уред.</p>
-									</li>
-									<li>
-										<span class="icon solid major style5 fa-language"></span>
-										<h3>Помош? Help? Ndihmë?</h3>
-										<p>Достапно на 3 различни јазици: македонски, англиски и албански.</p>
-									</li>
-								</ul>
-							</section>
-
-							<section id="third" class="main special">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Како се започна?</h2>
-										</header>
-										<p>Првата идеја дојде со проблемот дека нашите паричници стануваат се поголеми и поголеми секој ден. Секој супермаркет, продавница за храна, кино, аптека има свои картички за лојалност. Со овие картички за лојалност имате свои награди како што се собирање поени, членство, попусти и многу повеќе. Сите сакаме награди, но фрустрирачки е да носите толку многу картички за лојалност во вашите џебови. <br> <strong>Ајде да признаеме! Тоа е фрустрирачки!</strong></p>
-									</div>
-								</div>
-							</section>
-
-							<section id="contact" class="main special">
-								<div class="spotlight">
-									<div class="content">
-
-											<header class="major">
-												<h2>Испратете ни е-пошта</h2>
-											</header>
-											<h3 style="color: lightcoral;">walletlessapp@gmail.com</h3>
-											<header class="major">
-												<h2>Преземи</h2>
-											</header>
-											<div style="text-align: center; width: 100%;">
-												<ul class="icons">
-													<li><a href="https://apps.apple.com/mk/app/walletless-cards/id1622182327" class="icon brands fa-apple alt" style="color: gray;"><span class="label">Apple</span></a></li>
-													<li><a href="https://play.google.com/store/apps/details?id=com.walletless.walletlessApp" class="icon brands fa-android alt" style="color: lightgreen;"><span class="label">Android</span></a></li>
-												</ul>
-											</div>
-
-									</div>
-								</div>
-							</section>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright"><strong>&copy; WalletLess</strong></p>
-					</footer>
-
+				<button class="nav__burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" data-i18n-attr="aria-label:a11y.menu" aria-label="Мени">
+					<span></span><span></span>
+				</button>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div class="nav__mobile" id="mobileMenu" hidden>
+				<a href="#intro" data-nav data-i18n="nav.overview">Преглед</a>
+				<a href="#second" data-nav data-i18n="nav.whyLong">Зошто WalletLess?</a>
+				<a href="#third" data-nav data-i18n="nav.storyLong">Како започна</a>
+				<a href="#contact" data-nav data-i18n="nav.contact">Контакт</a>
+			</div>
+		</header>
 
+		<main id="top">
+
+			<!-- ══ HERO ══ -->
+			<section class="hero" id="intro">
+				<div class="hero__aura" aria-hidden="true">
+					<span class="aura aura--violet"></span>
+					<span class="aura aura--teal"></span>
+					<span class="aura aura--indigo"></span>
+				</div>
+
+				<div class="shell hero__grid">
+					<div class="hero__copy">
+						<p class="eyebrow reveal" style="--d:0ms">
+							<span class="eyebrow__dot"></span><span data-i18n="hero.badge">Достапно на App Store</span>
+						</p>
+
+						<h1 class="display reveal" style="--d:80ms">
+							<span data-i18n="hero.title1">Сите ваши картички.</span><br />
+							<span class="gradient-text" data-i18n="hero.title2">Во еден паричник.</span>
+						</h1>
+
+						<p class="lede reveal" style="--d:180ms" data-i18n="hero.lede">
+							WalletLess ги собира сите ваши картички за лојалност во телефонот.
+							Достапни се и офлајн, а секогаш најгоре е онаа што ви треба —
+							подредени според тоа каде се наоѓате.
+						</p>
+
+						<div class="hero__actions reveal" style="--d:260ms">
+							<a class="btn btn--light" href="https://apps.apple.com/mk/app/walletless-cards/id1622182327" target="_blank" rel="noopener">
+								<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.037 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+								<span data-i18n="hero.appstore">Преземи на App Store</span>
+							</a>
+							<a class="btn btn--ghost" href="#second" data-i18n="hero.more">Дознај повеќе</a>
+						</div>
+
+						<ul class="hero__meta reveal" style="--d:340ms">
+							<li data-i18n="hero.meta1">Бесплатно</li>
+							<li data-i18n="hero.meta2">Без реклами</li>
+							<li data-i18n="hero.meta3">Работи офлајн</li>
+						</ul>
+					</div>
+
+					<div class="hero__device reveal reveal--scale" style="--d:220ms">
+						<div class="device" data-parallax="0.06">
+							<div class="device__halo" aria-hidden="true"></div>
+							<div class="device__frame">
+								<div class="device__screen">
+									<div class="ui" aria-hidden="true">
+										<div class="ui__status"><span>9:41</span><span class="ui__bars"><i></i><i></i><i></i></span></div>
+										<div class="ui__head">
+											<h3 data-i18n="ui.title">Мои картички</h3>
+											<p><span class="pulse-dot"></span><span data-i18n="ui.near">Во близина · Скопје</span></p>
+										</div>
+										<ul class="ui__cards">
+											<li class="ucard ucard--1"><span class="ucard__badge" data-i18n="ui.badge">Најблиску</span><span class="ucard__name">Tinex</span><span class="ucard__code"></span></li>
+											<li class="ucard ucard--2"><span class="ucard__name">Vero</span><span class="ucard__code"></span></li>
+											<li class="ucard ucard--3"><span class="ucard__badge" data-i18n="ui.badge">Најблиску</span><span class="ucard__name">Kam</span><span class="ucard__code"></span></li>
+											<li class="ucard ucard--4"><span class="ucard__name">Cineplexx</span><span class="ucard__code"></span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="device__island" aria-hidden="true"></div>
+							</div>
+						</div>
+
+						<div class="float-chip float-chip--a" data-parallax="-0.12" aria-hidden="true">
+							<svg viewBox="0 0 24 24" class="ico"><path d="M12 21s7-5.3 7-11a7 7 0 1 0-14 0c0 5.7 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+							<span data-i18n="chip.sorted">Сортирано по локација</span>
+						</div>
+						<div class="float-chip float-chip--b" data-parallax="0.14" aria-hidden="true">
+							<svg viewBox="0 0 24 24" class="ico"><path d="M5 13.5 9.5 18 19 7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span data-i18n="chip.offline">Достапно офлајн</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hero__scroll" aria-hidden="true"><span></span></div>
+			</section>
+
+			<!-- ══ STATS ══ -->
+			<section class="strip">
+				<div class="shell strip__grid">
+					<div class="stat reveal" style="--d:0ms"><b data-count="3">3</b><span data-i18n="stat.langs">јазици во апликацијата</span></div>
+					<div class="stat reveal" style="--d:70ms"><b>∞</b><span data-i18n="stat.cards">картички без ограничување</span></div>
+					<div class="stat reveal" style="--d:140ms"><b data-count="100" data-suffix="%">100%</b><span data-i18n="stat.offline">функционалност офлајн</span></div>
+					<div class="stat reveal" style="--d:210ms"><b data-i18n="stat.priceValue">0 ден.</b><span data-i18n="stat.price">сега и засекогаш</span></div>
+				</div>
+			</section>
+
+			<!-- ══ WHY / BENTO ══ -->
+			<section class="section section--light" id="second">
+				<div class="shell">
+					<header class="section__head">
+						<p class="eyebrow eyebrow--dark reveal" data-i18n="why.eyebrow">Зошто WalletLess?</p>
+						<h2 class="title reveal" style="--d:80ms">
+							<span data-i18n="why.title1">Полесни џебови.</span><br /><span class="muted" data-i18n="why.title2">Помалку размислување.</span>
+						</h2>
+					</header>
+
+					<div class="bento">
+						<article class="tile tile--wide reveal" style="--d:0ms">
+							<div class="tile__body">
+								<h3 data-i18n="t1.h">Картичката што ви треба — секогаш на врвот</h3>
+								<p data-i18n="t1.p">WalletLess ги подредува картичките според локацијата на вашиот уред. Влегувате во продавница, ја вадите апликацијата и таа веќе ве чека.</p>
+							</div>
+							<div class="radar" aria-hidden="true">
+								<span class="radar__ring"></span><span class="radar__ring"></span><span class="radar__ring"></span>
+								<span class="radar__pin radar__pin--1"></span>
+								<span class="radar__pin radar__pin--2"></span>
+								<span class="radar__pin radar__pin--3"></span>
+								<span class="radar__me"></span>
+							</div>
+						</article>
+
+						<article class="tile reveal" style="--d:80ms">
+							<div class="tile__icon">
+								<svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><rect x="2.5" y="6" width="19" height="13" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 10h19" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="14.5" r="1.4" fill="currentColor"/></svg>
+							</div>
+							<div class="tile__body">
+								<h3 data-i18n="t2.h">Помалку за носење</h3>
+								<p data-i18n="t2.p">Додајте ги сите картички за лојалност еднаш и оставете го паричникот дома.</p>
+							</div>
+						</article>
+
+						<article class="tile reveal" style="--d:160ms">
+							<div class="tile__icon">
+								<svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 3v12m0 0 4.2-4.2M12 15l-4.2-4.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17.5v1.2A2.3 2.3 0 0 0 6.3 21h11.4a2.3 2.3 0 0 0 2.3-2.3v-1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+							</div>
+							<div class="tile__body">
+								<h3 data-i18n="t3.h">Работи и без интернет</h3>
+								<p data-i18n="t3.p">Сите картички се зачувани на уредот. Слаб сигнал во маркетот повеќе не е проблем.</p>
+							</div>
+						</article>
+
+						<article class="tile tile--wide tile--langs reveal" style="--d:240ms">
+							<div class="tile__body">
+								<h3>Помош? Help? Ndihmë?</h3>
+								<p data-i18n="t4.p">Достапно на три јазици — македонски, англиски и албански.</p>
+							</div>
+							<div class="langs" aria-hidden="true">
+								<span class="lang">МК</span><span class="lang">EN</span><span class="lang">SQ</span>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══ STORY ══ -->
+			<section class="section section--dark story" id="third">
+				<div class="shell story__grid">
+					<div class="story__visual reveal reveal--scale" aria-hidden="true">
+						<div class="pile" id="pile">
+							<span class="pile__card pile__card--1"></span>
+							<span class="pile__card pile__card--2"></span>
+							<span class="pile__card pile__card--3"></span>
+							<span class="pile__card pile__card--4"></span>
+							<span class="pile__card pile__card--5"></span>
+						</div>
+					</div>
+
+					<div class="story__copy">
+						<p class="eyebrow reveal" data-i18n="story.eyebrow">Како се започна?</p>
+						<h2 class="title reveal" style="--d:80ms" data-i18n="story.title">Паричниците стануваа сè подебели.</h2>
+						<p class="body reveal" style="--d:160ms" data-i18n="story.p1">
+							Секој супермаркет, продавница за храна, кино и аптека има своја картичка за
+							лојалност. Со нив доаѓаат поени, попусти и членства — награди што сите ги сакаме.
+						</p>
+						<p class="body reveal" style="--d:220ms" data-i18n="story.p2">
+							Но носењето десетина парчиња пластика во џеб е сè друго освен пријатно.
+						</p>
+						<blockquote class="quote reveal" style="--d:300ms" data-i18n="story.quote">
+							Ајде да признаеме! Тоа е фрустрирачки.
+						</blockquote>
+					</div>
+				</div>
+			</section>
+
+			<!-- ══ CTA / CONTACT ══ -->
+			<section class="cta" id="contact">
+				<div class="cta__aura" aria-hidden="true"></div>
+				<div class="shell cta__inner">
+					<img class="cta__logo reveal reveal--scale" src="images/logo-256.png" alt="WalletLess" width="88" height="88" />
+					<h2 class="title title--xl reveal" style="--d:80ms" data-i18n="cta.title">Оставете го паричникот дома.</h2>
+					<p class="lede lede--center reveal" style="--d:160ms" data-i18n="cta.lede">Преземете ја апликацијата бесплатно и додајте ја првата картичка за помалку од минута.</p>
+
+					<div class="hero__actions hero__actions--center reveal" style="--d:240ms">
+						<a class="btn btn--light" href="https://apps.apple.com/mk/app/walletless-cards/id1622182327" target="_blank" rel="noopener">
+							<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.037 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+							<span data-i18n="cta.ios">Преземи за iPhone</span>
+						</a>
+					</div>
+
+					<p class="cta__mail reveal" style="--d:320ms">
+						<span data-i18n="cta.mail">Прашање или предлог?</span>
+						<a href="mailto:walletlessapp@gmail.com">walletlessapp@gmail.com</a>
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="shell footer__inner">
+				<div class="footer__brand">
+					<img src="images/logo-256.png" alt="" width="26" height="26" />
+					<span>WalletLess</span>
+				</div>
+				<nav class="footer__links" data-i18n-attr="aria-label:a11y.links" aria-label="Врски">
+					<a href="https://apps.apple.com/mk/app/walletless-cards/id1622182327" target="_blank" rel="noopener">App Store</a>
+					<a href="mailto:walletlessapp@gmail.com" data-i18n="footer.email">Е-пошта</a>
+				</nav>
+				<p class="footer__copy">© <span id="year">2026</span> WalletLess. <span data-i18n="footer.rights">Сите права задржани.</span></p>
+			</div>
+		</footer>
+
+		<script src="assets/js/i18n.js" defer></script>
+		<script src="assets/js/site.js" defer></script>
 	</body>
 </html>
