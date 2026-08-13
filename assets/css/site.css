@@ -878,7 +878,8 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 980px) {
 	.hero { padding-top: 118px; }
 	.hero__grid { grid-template-columns: 1fr; text-align: center; }
-	.hero__copy { display: flex; flex-direction: column; align-items: center; }
+	/* max-width still applies in the 1-col layout — re-center the block itself */
+	.hero__copy { display: flex; flex-direction: column; align-items: center; margin-inline: auto; }
 	.lede { margin-inline: auto; }
 	.hero__actions, .hero__meta { justify-content: center; }
 	/* shrink-wrap the column so the floating chips anchor to the phone, not the viewport */
