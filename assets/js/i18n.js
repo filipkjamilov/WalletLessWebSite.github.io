@@ -11,7 +11,7 @@
 	var DICT = {
 		mk: {
 			'meta.title': 'WalletLess — Сите ваши картички за лојалност на едно место',
-			'meta.desc': 'WalletLess е виртуелен паричник за вашите картички за лојалност. Достапни офлајн, подредени според вашата локација. Бесплатно за iPhone.',
+			'meta.desc': 'WalletLess е виртуелен паричник за вашите картички за лојалност. Достапни офлајн, подредени според вашата локација. Бесплатно за iPhone и Android.',
 
 			'skip': 'Прескокни до содржината',
 			'a11y.menu': 'Мени',
@@ -25,8 +25,9 @@
 			'nav.whyLong': 'Зошто WalletLess?',
 			'nav.storyLong': 'Како започна',
 
-			'hero.badge': 'Достапно на App Store',
+			'hero.badge': 'Достапно на iOS и Android',
 			'hero.appstore': 'Преземи на App Store',
+			'hero.play': 'Преземи на Google Play',
 			'hero.more': 'Дознај повеќе',
 			'hero.title1': 'Сите ваши картички.',
 			'hero.title2': 'Во еден паричник.',
@@ -68,6 +69,7 @@
 			'cta.title': 'Оставете го паричникот дома.',
 			'cta.lede': 'Преземете ја апликацијата бесплатно и додајте ја првата картичка за помалку од минута.',
 			'cta.ios': 'Преземи за iPhone',
+			'cta.android': 'Преземи за Android',
 			'cta.mail': 'Прашање или предлог?',
 
 			'footer.email': 'Е-пошта',
@@ -76,7 +78,7 @@
 
 		en: {
 			'meta.title': 'WalletLess — All your loyalty cards in one place',
-			'meta.desc': 'WalletLess is a virtual wallet for your loyalty cards. Available offline and sorted by your location. Free for iPhone.',
+			'meta.desc': 'WalletLess is a virtual wallet for your loyalty cards. Available offline and sorted by your location. Free for iPhone and Android.',
 
 			'skip': 'Skip to content',
 			'a11y.menu': 'Menu',
@@ -90,8 +92,9 @@
 			'nav.whyLong': 'Why WalletLess?',
 			'nav.storyLong': 'How it started',
 
-			'hero.badge': 'Available on the App Store',
+			'hero.badge': 'Available on iOS and Android',
 			'hero.appstore': 'Download on the App Store',
+			'hero.play': 'Get it on Google Play',
 			'hero.more': 'Learn more',
 			'hero.title1': 'All your cards.',
 			'hero.title2': 'In one wallet.',
@@ -133,6 +136,7 @@
 			'cta.title': 'Leave the wallet at home.',
 			'cta.lede': 'Download the app for free and add your first card in under a minute.',
 			'cta.ios': 'Download for iPhone',
+			'cta.android': 'Download for Android',
 			'cta.mail': 'A question or an idea?',
 
 			'footer.email': 'Email',
@@ -141,7 +145,7 @@
 
 		sq: {
 			'meta.title': 'WalletLess — Të gjitha kartelat tuaja të besnikërisë në një vend',
-			'meta.desc': 'WalletLess është një portofol virtual për kartelat tuaja të besnikërisë. Të disponueshme offline dhe të renditura sipas vendndodhjes suaj. Falas për iPhone.',
+			'meta.desc': 'WalletLess është një portofol virtual për kartelat tuaja të besnikërisë. Të disponueshme offline dhe të renditura sipas vendndodhjes suaj. Falas për iPhone dhe Android.',
 
 			'skip': 'Kalo te përmbajtja',
 			'a11y.menu': 'Menu',
@@ -155,8 +159,9 @@
 			'nav.whyLong': 'Pse WalletLess?',
 			'nav.storyLong': 'Si filloi',
 
-			'hero.badge': 'I disponueshëm në App Store',
+			'hero.badge': 'I disponueshëm në iOS dhe Android',
 			'hero.appstore': 'Shkarko në App Store',
+			'hero.play': 'Shkarko në Google Play',
 			'hero.more': 'Mëso më shumë',
 			'hero.title1': 'Të gjitha kartelat tuaja.',
 			'hero.title2': 'Në një portofol.',
@@ -198,6 +203,7 @@
 			'cta.title': 'Lëreni portofolin në shtëpi.',
 			'cta.lede': 'Shkarkoni aplikacionin falas dhe shtoni kartelën tuaj të parë në më pak se një minutë.',
 			'cta.ios': 'Shkarko për iPhone',
+			'cta.android': 'Shkarko për Android',
 			'cta.mail': 'Një pyetje apo ide?',
 
 			'footer.email': 'Email',
